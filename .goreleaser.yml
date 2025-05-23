@@ -49,8 +49,6 @@ archives:
   format_overrides:
     - goos: windows
       format: zip
-    - goos: darwin
-      format: zip
 - id: ghawrap
   builds:
   - ghawrap
@@ -62,8 +60,6 @@ archives:
     {{- if .Arm }}v{{ .Arm }}{{ end -}}
   format_overrides:
     - goos: windows
-      format: zip
-    - goos: darwin
       format: zip
 checksum:
   name_template: 'checksums.txt'
